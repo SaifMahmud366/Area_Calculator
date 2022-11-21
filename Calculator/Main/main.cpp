@@ -5,7 +5,7 @@ class first
 {
     public:
     char in,p,t,s,r;
-    int area,a,b,h;
+    double area,a,b,h;
 };
 class second: public first
 {
@@ -62,7 +62,15 @@ class second: public first
 };
 main()
 {
-    second obj;
-    obj.input();
-    obj.process();
+    char x;
+    do
+    {
+        second obj;
+        obj.input();
+        obj.process();
+        cout<<endl<<"Wanna Calculate again Y/N ?"<<endl;
+        cin>>x;
+    } while (x=='Y' || x=='y');
+    
+    
 }
